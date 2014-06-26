@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/main1.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+  $("#mainmenu").click(function(){
+    $("#menu").toggle();
+  });
+});
+</script>
+<script>
+function test() {
+    window.location.href = "index1.html";
+}
+
+</script>
+<script>
+function logout()
+{
+//window.localStorage.remove();
+window.localStorage. clear() ;
+window.location.href = "index.html";
+}
+</script>
+<script>
+function edit(){
+window.location.href="edit.html";
+}
+</script>
+<script>
+function home(){
+window.location.href="profile.html";
+}
+</script>
+</head>
+<body style="background-color:#ffffff !important">
+<div data-role="page" id="pageone">
+<img src="images/buzz-logo.png" width="60%">
+<hr style="height:4px; background-color:#0C9; border-style:none; width:100%;">
+<div style="width:96%;">
+<div style="float:left; margin-left:10px;margin-top:8.5%">
+<ul style="list-style-type:none; padding:0; margin:0; position:absolute; z-index:1000000">
+<li id="mainmenu"><img src="images/nav_icon.png">
+<ul id="menu" style="list-style-type:none; padding:0; display:none; border-style:groove; border-radius:5px; height:auto;; background-color:#fff;">
+<li onclick="home()" style="font-size:18px; "><img src="images/a.png" width="20%" height="20%" style=" vertical-align:middle;"><a href="#" style="text-decoration:none; vertical-align:middle;">Home</a></li>
+<li onclick="edit()" style="font-size:18px; "><hr><img src="images/b.jpg" width="20%" height="20%" style=" vertical-align:middle;"><a href="#" style="text-decoration:none; vertical-align:middle;">Edit Profile</a></li>
+<li onclick="test()" style="font-size:18px; "><hr><img src="images/c.png" width="20%" height="20%" style=" vertical-align:middle;"><a href="#" style="text-decoration:none; vertical-align:middle;">Test Paper</a></li>
+<li style="font-size:18px;"><hr><img src="images/d.png" width="20%" height="20%" style=" vertical-align:middle;"><a href="#" style="text-decoration:none; vertical-align:middle;">My Stats</a></li>
+<li onclick="logout()" style="font-size:18px;"><hr><img src="images/e.png" width="20%" height="20%" style=" vertical-align:middle;"><a href="#" style="text-decoration:none; vertical-align:middle;">Log Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+ 
+
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Personal Information</h3>
+        <div data-role="page">
+  <div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" data-clear-btn="true">
+        <label for="summary">Summary</label>
+      <input type="text" name="summary" id="summary" data-clear-btn="true">
+        <select name="profession" id="profession">
+            <option>I am a</option>
+            <option value="doctor">Doctor</option>
+            <option value="student">Student</option>
+            <option value="researcher">Researcher</option>
+            <option value="acamedician">acamedician</option>
+            <option value="other">Other</option>
+          </select>
+    </form>
+  </div>
+</div>
+      </div>
+      <div data-role="collapsible">
+        <h3>Educational Information</h3>
+        <p>I'm the expanded content.</p>
+      </div>
+      
+      <div data-role="collapsible">
+        <h3>Professional Information</h3>
+        <p>I'm the expanded content.</p>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer">
+  
+  </div>
+</div>
+ <div>
+    
+        <a href="#" target="_blank" style="margin-left:13%">About Us</a><a href="single.html" target="_blank" style="margin-left:13%">Setting</a><a href="#" target="_blank" style="margin-left:13%">Rate App</a>
+    
+    	<p style="margin-left:5%;font-color:white">Copyright @ 2013 Whitebutter pvt Ltd</p>
+    
+  </div>
+ 
+
+</body>
+</html>
